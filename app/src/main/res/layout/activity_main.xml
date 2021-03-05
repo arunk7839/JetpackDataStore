@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_60dp"
+        android:background="@drawable/background"
+        android:padding="@dimen/padding_18dp"
+        android:text="Save user"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/switch_gender"
+        app:layout_constraintStart_toStartOf="@+id/switch_gender"
+        app:layout_constraintTop_toBottomOf="@+id/switch_gender" />
+
+    <EditText
+        android:id="@+id/et_lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:ems="10"
+        android:hint="@string/hint_enter_last_name"
+        app:layout_constraintEnd_toEndOf="@+id/et_fname"
+        app:layout_constraintStart_toStartOf="@+id/et_fname"
+        app:layout_constraintTop_toBottomOf="@+id/et_fname" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:ems="10"
+        android:hint="@string/hint_enter_age"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/et_lname"
+        app:layout_constraintStart_toStartOf="@+id/et_lname"
+        app:layout_constraintTop_toBottomOf="@+id/et_lname"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <EditText
+        android:id="@+id/et_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:ems="10"
+        android:hint="@string/hint_enter_first_name"
+        app:layout_constraintEnd_toEndOf="@+id/tv_gender"
+        app:layout_constraintStart_toStartOf="@+id/tv_gender"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gender"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/tv_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textsize_20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textsize_20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fname"
+        app:layout_constraintStart_toStartOf="@+id/tv_fname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fname" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textsize_20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lname"
+        app:layout_constraintStart_toStartOf="@+id/tv_lname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lname" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textsize_20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_age"
+        app:layout_constraintStart_toStartOf="@+id/tv_age"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/female_male"
+        android:textSize="@dimen/textsize_20sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_age"
+        app:layout_constraintStart_toStartOf="@+id/et_age"
+        app:layout_constraintTop_toBottomOf="@+id/et_age" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

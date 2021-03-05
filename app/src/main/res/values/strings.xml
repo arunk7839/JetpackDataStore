@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JetpackDataStore</string>
+    <string name="hint_enter_first_name">Enter First Name</string>
+    <string name="hint_enter_last_name">Enter Last Name</string>
+    <string name="hint_enter_age">Enter Age</string>
+    <string name="female_male">Female/Male</string>
+</resources>
